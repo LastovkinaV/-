@@ -1,12 +1,12 @@
 # New project
 
-Исходники лендинга и тестового лежат в [ai-task-assistant](./ai-task-assistant).
+Исходники лендинга и тестового лежат в [Тестовое для Руководителя проектов](./Тестовое%20для%20Руководителя%20проектов).
 
 ## Что внутри
 
 - статический лендинг: `index.html`, `styles.css`, `app.js`
-- описание тестового: `README.md`, `product.md`, `prompts.md`, `examples.md`
-- входные и выходные данные: `input/messages.md`, `output/result.md`
+- описание задачи: `README.md`
+- исходные сообщения: `input/messages.md`
 - автодеплой на GitHub Pages: `.github/workflows/deploy-pages.yml`
 
 ## Как быстро открыть локально
@@ -19,8 +19,8 @@ python3 -m http.server 4173
 
 Потом откройте:
 
-`http://localhost:4173/ai-task-assistant/`
+`http://localhost:4173/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5%20%D0%B4%D0%BB%D1%8F%20%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2/`
 
 ## Как публиковать
 
-Пошаговая инструкция лежит в [ai-task-assistant/DEPLOY.md](./ai-task-assistant/DEPLOY.md).
+Пошаговая инструкция лежит в [DEPLOY.md](./Тестовое%20для%20Руководителя%20проектов/DEPLOY.md).

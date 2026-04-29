@@ -16,13 +16,13 @@
 
 - `.github/workflows/deploy-pages.yml`
 
-Он публикует содержимое папки `ai-task-assistant` в GitHub Pages.
+Он публикует содержимое папки `Тестовое для Руководителя проектов` в GitHub Pages.
 
 ### Шаг 1. Создайте пустой репозиторий на GitHub
 
 Например:
 
-- `ai-task-assistant-test`
+- `task-intake-test`
 
 Создайте пустой репозиторий без лишних файлов, если GitHub предлагает добавить README, `.gitignore` или license.
 
@@ -32,7 +32,7 @@
 
 ```bash
 git add .
-git commit -m "Prepare AI task assistant landing page"
+git commit -m "Prepare landing page"
 git branch -M main
 git remote add origin https://github.com/<YOUR_GITHUB_LOGIN>/<YOUR_REPOSITORY>.git
 git push -u origin main
@@ -84,7 +84,7 @@ GitHub Pages автоматически обновится.
 2. Откройте Vercel.
 3. Нажмите `New Project`.
 4. Импортируйте ваш GitHub-репозиторий.
-5. В настройках проекта укажите `Root Directory` = `ai-task-assistant`.
+5. В настройках проекта укажите `Root Directory` = `Тестовое для Руководителя проектов`.
 6. Нажмите `Deploy`.
 
 После этого Vercel даст публичную ссылку и будет обновлять сайт после новых пушей.
@@ -96,7 +96,7 @@ GitHub Pages автоматически обновится.
 ### Шаги
 
 1. Откройте Netlify Drop.
-2. Перетащите папку `ai-task-assistant` в окно загрузки.
+2. Перетащите папку `Тестовое для Руководителя проектов` в окно загрузки.
 3. Получите публичную ссылку сразу после загрузки.
 
 Минус: обновления нужно будет загружать руками заново.
@@ -111,7 +111,7 @@ python3 -m http.server 4173
 
 Затем откройте:
 
-`http://localhost:4173/ai-task-assistant/`
+`http://localhost:4173/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5%20%D0%B4%D0%BB%D1%8F%20%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2/`
 
 ## Если что-то пошло не так
 
@@ -133,4 +133,4 @@ python3 -m http.server 4173
 
 ### Vercel показывает не тот каталог
 
-Проверьте, что `Root Directory` выставлен именно в `ai-task-assistant`.
+Проверьте, что `Root Directory` выставлен именно в `Тестовое для Руководителя проектов`.
