@@ -5,9 +5,9 @@ const heroMetrics = [
     copy: 'Ровно столько должен занимать весь объем тестового'
   },
   {
-    label: 'AI only',
-    value: 'Free',
-    copy: 'Подходят только бесплатные модели и инструменты'
+    label: 'Инструменты',
+    value: 'Any',
+    copy: 'Можно использовать любые AI-инструменты, включая бесплатную версию Codex'
   },
   {
     label: 'Формат',
@@ -43,22 +43,22 @@ const workflow = [
   {
     step: '1',
     title: 'Взять хаотичные сообщения',
-    copy: 'Кандидат получает готовый набор входящих сообщений без структуры и без дополнительного брифа.'
+    copy: 'Вы получаете готовый набор входящих сообщений без структуры и без дополнительного брифа.'
   },
   {
     step: '2',
     title: 'Поставить задачу AI',
-    copy: 'Нужно сформулировать промпт так, чтобы модель вернула полезный, ограниченный и объяснимый результат.'
+    copy: 'Вам необходимо сформулировать промпт так, чтобы модель вернула полезный, ограниченный и объяснимый результат.'
   },
   {
     step: '3',
     title: 'Собрать задачи в понятный формат',
-    copy: 'Для каждого сообщения нужен title, description, type, priority, deadline и owner role.'
+    copy: 'Вам необходимо для каждого сообщения собрать title, description, type, priority, deadline и owner role.'
   },
   {
     step: '4',
     title: 'Показать ход мысли',
-    copy: 'Кандидат фиксирует промпты, улучшения и продуктовую логику, а не только финальную выдачу.'
+    copy: 'Вам необходимо зафиксировать промпты, улучшения и продуктовую логику, а не только финальную выдачу.'
   }
 ];
 
@@ -146,7 +146,7 @@ const deliverables = [
   },
   {
     title: 'input/messages.md',
-    copy: 'Набор исходных хаотичных сообщений, который кандидат должен обработать через AI.',
+    copy: 'Набор исходных хаотичных сообщений, который вам необходимо обработать через AI.',
     path: '/ai-task-assistant/input/messages.md'
   },
   {
@@ -161,29 +161,6 @@ const deliverables = [
   }
 ];
 
-const scoreItems = [
-  {
-    title: 'Постановка задачи для AI',
-    weight: 35,
-    copy: 'Видно ли, что кандидат умеет ограничивать модель, задавать формат результата и улучшать промпт.'
-  },
-  {
-    title: 'Логика и объяснимость',
-    weight: 25,
-    copy: 'Есть ли понятные правила, по которым определяются тип, приоритет, дедлайн и ответственный.'
-  },
-  {
-    title: 'Выводы, а не копипаст',
-    weight: 20,
-    copy: 'Сделал ли кандидат выводы о хаосе входящих задач и о том, где AI ошибается или требует уточнений.'
-  },
-  {
-    title: 'Аккуратность веб-реализации',
-    weight: 20,
-    copy: 'Открывается ли результат в браузере, легко ли его читать и хватает ли материалов для проверки.'
-  }
-];
-
 const submissionItems = [
   {
     title: 'Ссылка на лендинг',
@@ -195,7 +172,7 @@ const submissionItems = [
   },
   {
     title: 'Короткий self-review',
-    copy: 'Что получилось хорошо и что кандидат улучшил бы еще за один дополнительный час.'
+    copy: 'Что получилось хорошо и что вы улучшили бы еще за один дополнительный час.'
   }
 ];
 
@@ -205,7 +182,6 @@ const workflowRoot = document.querySelector('#workflow');
 const messagesRoot = document.querySelector('#messages');
 const tasksRoot = document.querySelector('#tasks');
 const deliverablesRoot = document.querySelector('#deliverables-grid');
-const scoreRoot = document.querySelector('#score-grid');
 const submissionRoot = document.querySelector('#submission-list');
 
 function renderHeroMetrics() {
@@ -325,24 +301,6 @@ function renderDeliverables() {
     .join('');
 }
 
-function renderScore() {
-  scoreRoot.innerHTML = scoreItems
-    .map(
-      (item) => `
-        <article class="score-card">
-          <p class="panel-kicker">Evaluation</p>
-          <h3 class="score-title">${item.title}</h3>
-          <p class="score-weight">${item.weight}%</p>
-          <div class="score-bar">
-            <span style="width: ${item.weight}%"></span>
-          </div>
-          <p class="score-copy">${item.copy}</p>
-        </article>
-      `
-    )
-    .join('');
-}
-
 function renderSubmission() {
   submissionRoot.innerHTML = submissionItems
     .map(
@@ -363,5 +321,4 @@ renderWorkflow();
 renderMessages();
 renderTasks();
 renderDeliverables();
-renderScore();
 renderSubmission();

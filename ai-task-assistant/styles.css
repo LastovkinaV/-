@@ -296,8 +296,7 @@ body {
 
 .issue-grid,
 .flow-grid,
-.deliverables-grid,
-.score-grid {
+.deliverables-grid {
   display: grid;
   gap: 16px;
   margin-top: 20px;
@@ -309,15 +308,13 @@ body {
 
 .issue-card,
 .flow-card,
-.deliverable-card,
-.score-card {
+.deliverable-card {
   padding: 18px;
 }
 
 .issue-title,
 .flow-title,
-.deliverable-title,
-.score-title {
+.deliverable-title {
   margin: 14px 0 0;
   font-size: 1.05rem;
 }
@@ -509,31 +506,6 @@ body {
   font-size: 0.82rem;
 }
 
-.score-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.score-weight {
-  margin: 14px 0 10px;
-  font-family: var(--font-serif);
-  font-size: 2rem;
-}
-
-.score-bar {
-  width: 100%;
-  height: 10px;
-  border-radius: 999px;
-  background: rgba(99, 81, 68, 0.12);
-  overflow: hidden;
-}
-
-.score-bar span {
-  display: block;
-  height: 100%;
-  border-radius: inherit;
-  background: linear-gradient(90deg, var(--brand), var(--gold));
-}
-
 .cta-shell {
   margin-top: 22px;
 }
@@ -569,11 +541,6 @@ body {
   line-height: 1.58;
 }
 
-.cta-note {
-  margin: 0;
-  max-width: 58ch;
-}
-
 code {
   padding: 0.14rem 0.35rem;
   border-radius: 0.42rem;
@@ -595,8 +562,7 @@ code {
 
 @media (max-width: 920px) {
   .hero,
-  .demo-stage,
-  .score-grid {
+  .demo-stage {
     grid-template-columns: 1fr;
   }
 
@@ -631,7 +597,6 @@ code {
   .issue-grid,
   .flow-grid,
   .deliverables-grid,
-  .score-grid,
   .cta-list,
   .task-meta {
     grid-template-columns: 1fr;
