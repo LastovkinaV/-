@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Task Assistant</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="background-orb orb-left"></div>
+    <div class="background-orb orb-right"></div>
+
+    <main class="page">
+      <header class="topbar">
+        <a class="brand" href="#top">AI Task Assistant</a>
+        <nav class="topnav">
+          <a href="#problem">Проблема</a>
+          <a href="#demo">Демо</a>
+          <a href="#deliverables">Что сдавать</a>
+          <a href="#score">Оценка</a>
+        </nav>
+      </header>
+
+      <section id="top" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Test Assignment For PM L2</p>
+          <h1>Соберите за 2 часа AI-инструмент, который превращает личку в нормальные задачи.</h1>
+          <p class="lead">
+            Кандидат получает хаотичные сообщения от сотрудников и с помощью
+            бесплатного AI должен привести их к понятной структуре: название,
+            описание, тип, приоритет, дедлайн и ответственный.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#demo">Посмотреть демо</a>
+            <a class="button button-secondary" href="#deliverables">Что нужно сдать</a>
+          </div>
+
+          <div class="hero-metrics" id="hero-metrics"></div>
+        </div>
+
+        <aside class="hero-board">
+          <div class="board-card board-card-accent">
+            <p class="board-label">Цель тестового</p>
+            <h2>Понять, умеет ли человек думать вместе с AI, а не просто копировать ответ.</h2>
+          </div>
+
+          <div class="board-stack">
+            <div class="board-card">
+              <p class="board-label">Что важно</p>
+              <ul class="clean-list">
+                <li>Только бесплатные AI-инструменты</li>
+                <li>Результат должен открываться в браузере</li>
+                <li>Нужно показать промпты и ход мысли</li>
+              </ul>
+            </div>
+
+            <div class="board-card">
+              <p class="board-label">Формат</p>
+              <p class="board-copy">
+                Статическая страница, GitHub Pages, Netlify, Vercel или любой
+                другой бесплатный хостинг.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="problem" class="section-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Context</p>
+          <h2>Какая проблема лежит под этим заданием</h2>
+          <p>
+            Мы не проверяем разработку ради разработки. Мы моделируем типичный
+            хаос команды, где важное пишут в личку, приоритеты неочевидны, а
+            часть задач просто пропадает.
+          </p>
+        </div>
+        <div class="issue-grid" id="issues"></div>
+      </section>
+
+      <section class="section-shell flow-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Workflow</p>
+          <h2>Что должен сделать кандидат</h2>
+          <p>
+            Решение не обязано быть технически сложным. Важнее, чтобы была
+            видна логика работы с AI и умение превратить хаос в инструмент.
+          </p>
+        </div>
+        <div class="flow-grid" id="workflow"></div>
+      </section>
+
+      <section id="demo" class="section-shell demo-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Before / After</p>
+          <h2>Как выглядит ожидаемый результат</h2>
+          <p>
+            Ниже демонстрационный формат. Кандидат может сделать свой интерфейс,
+            но на странице должно быть ясно: вот входящие сообщения, а вот
+            структурированные задачи, полученные с помощью AI.
+          </p>
+        </div>
+
+        <div class="demo-stage">
+          <div class="demo-column">
+            <div class="panel-head">
+              <p class="panel-kicker">Input</p>
+              <h3>Сырые сообщения</h3>
+            </div>
+            <div id="messages" class="message-list"></div>
+          </div>
+
+          <div class="demo-column">
+            <div class="panel-head">
+              <p class="panel-kicker">Output</p>
+              <h3>AI-структурирование</h3>
+            </div>
+            <div id="tasks" class="task-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="deliverables" class="section-shell deliverables-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Deliverables</p>
+          <h2>Что именно кандидат должен приложить</h2>
+          <p>
+            Эти файлы позволяют увидеть не только финальный ответ, но и ход
+            мысли: как человек работал с моделью, что улучшал и какие выводы
+            сделал.
+          </p>
+        </div>
+
+        <div class="deliverables-grid" id="deliverables-grid"></div>
+      </section>
+
+      <section id="score" class="section-shell score-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Scoring</p>
+          <h2>Как вы будете оценивать результат</h2>
+          <p>
+            Сильное решение не обязано быть идеальным. Важнее, чтобы по нему
+            было видно мышление, работу с неопределенностью и умение задавать
+            правильные вопросы AI.
+          </p>
+        </div>
+
+        <div class="score-grid" id="score-grid"></div>
+      </section>
+
+      <section class="cta-shell">
+        <div class="cta-card">
+          <p class="eyebrow">Submission</p>
+          <h2>На выходе вы просите всего 3 вещи</h2>
+          <div class="cta-list" id="submission-list"></div>
+          <p class="cta-note">
+            Этого достаточно, чтобы быстро увидеть зрелость кандидата в работе
+            с AI без лишней бюрократии.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
