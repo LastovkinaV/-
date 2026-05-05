@@ -135,6 +135,10 @@ body::before {
   color: var(--surface);
 }
 
+.home-hero h1 {
+  max-width: 11ch;
+}
+
 .hero,
 .section-shell {
   border-radius: var(--radius-xl);
@@ -345,6 +349,75 @@ body::before {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.collection-grid,
+.capability-grid,
+.stack-grid,
+.score-grid,
+.note-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.collection-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.role-card {
+  min-height: 320px;
+  padding: 22px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--dark-line);
+  background: linear-gradient(180deg, #101010, #171717);
+  color: var(--surface);
+}
+
+.role-card h3,
+.stack-card h3,
+.note-card h3,
+.score-title {
+  margin: 14px 0 0;
+  font-size: 1.32rem;
+  line-height: 1.08;
+}
+
+.role-copy,
+.stack-card p,
+.note-card p,
+.score-copy,
+.note-list {
+  margin: 12px 0 0;
+  color: rgba(255, 255, 255, 0.74);
+  line-height: 1.56;
+}
+
+.role-meta,
+.role-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.role-meta {
+  margin-top: 18px;
+}
+
+.role-links {
+  margin-top: 18px;
+}
+
+.role-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(1, 172, 106, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
 .issue-card {
   min-height: 220px;
   padding: 20px;
@@ -371,7 +444,7 @@ body::before {
 }
 
 .flow-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .flow-card {
@@ -475,6 +548,63 @@ body::before {
   background: rgba(1, 172, 106, 0.22);
 }
 
+.capability-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.stack-grid,
+.note-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.stack-card,
+.note-card {
+  min-height: 220px;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+}
+
+.stack-card {
+  border: 1px solid var(--line);
+  background: var(--surface-strong);
+  color: var(--ink);
+}
+
+.stack-card p {
+  color: var(--muted);
+}
+
+.note-card {
+  border: 1px solid var(--dark-line);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--surface);
+}
+
+.note-list {
+  padding-left: 18px;
+}
+
+.score-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.score-card {
+  min-height: 220px;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--dark-line);
+  background: linear-gradient(180deg, #101010, #171717);
+  color: var(--surface);
+}
+
+.score-points {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
 .panel-head {
   padding-bottom: 14px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -560,6 +690,11 @@ body::before {
     grid-template-columns: 1fr 1fr;
   }
 
+  .collection-grid,
+  .score-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .hero h1 {
     max-width: none;
   }
@@ -586,13 +721,21 @@ body::before {
     padding: 20px;
   }
 
+  .collection-grid,
+  .capability-grid,
+  .stack-grid,
+  .score-grid,
+  .note-grid,
+  .issue-grid {
+    grid-template-columns: 1fr;
+  }
+
   .dataset-card {
     grid-template-columns: 1fr;
     align-items: flex-start;
   }
 
   .hero-metrics,
-  .issue-grid,
   .flow-grid {
     grid-template-columns: 1fr;
   }

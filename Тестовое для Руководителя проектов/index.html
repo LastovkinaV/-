@@ -11,7 +11,7 @@
       name="googlebot"
       content="noindex, nofollow, noarchive, nosnippet, noimageindex"
     />
-    <title>Контекст задач</title>
+    <title>Тестовые задания</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -20,131 +20,121 @@
 
     <main class="page">
       <header class="topbar">
-        <a class="brand" href="#top">
-          <span class="brand-text">Task Intake</span>
+        <a class="brand" href="./index.html">
+          <span class="brand-text">Test Library</span>
         </a>
         <nav class="topnav">
-          <a href="#problem">Контекст</a>
-          <a href="#workflow">Схема</a>
-          <a href="#materials">Материалы</a>
-          <a href="#timebox">Таймбокс</a>
+          <a href="#roles">Роли</a>
+          <a href="#notes">Что важно</a>
         </nav>
       </header>
 
-      <section id="top" class="hero">
+      <section id="top" class="hero home-hero">
         <div class="hero-copy">
-          <p class="eyebrow">PM L2 / Product Task</p>
-          <h1>За 2 часа разберите хаос во входящих задачах.</h1>
+          <p class="eyebrow">Hiring / Test Hub</p>
+          <h1>Выберите тестовое под вашу роль.</h1>
           <p class="lead">
-            Вам будет предоставлен набор неструктурированных сообщений от
-            сотрудников. Предложите и реализуйте решение, которое
-            помогает разобрать этот поток: показать исходные сообщения,
-            выделить из них отдельные задачи и привести их к понятной
-            структуре для дальнейшей работы команды.
+            Каждая страница этого сайта — отдельное тестовое задание под
+            конкретную роль. Вам необходимо открыть нужную страницу, выполнить
+            задание в указанном формате и прислать результат по инструкции для
+            вашей роли.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#materials">Открыть материалы</a>
-            <a class="button button-secondary" href="#workflow">Задачи</a>
+            <a class="button button-primary" href="#roles">Открыть роли</a>
+            <a class="button button-secondary" href="#notes">Что важно</a>
           </div>
-
-          <div class="hero-metrics" id="hero-metrics"></div>
         </div>
 
         <aside class="hero-board">
           <div class="board-card board-card-accent">
-            <p class="board-label">Задача</p>
-            <h2>Понять, как вы принимаете решения в условиях хаотичного и неполного контекста.</h2>
-          </div>
-
-          <div class="board-stack">
-            <div class="board-card board-card-inverse">
-              <p class="board-label">Принцип</p>
-              <p class="board-copy board-copy-strong">
-                Важные договоренности не должны жить в личке. Они должны
-                превращаться в предсказуемый и управляемый процесс.
-              </p>
-            </div>
-
-            <div class="board-card">
-              <p class="board-label">Формат</p>
-              <p class="board-copy">
-                Это продуктовая задача. Решение остается на вашей стороне.
-              </p>
-            </div>
+            <p class="board-label">Принцип</p>
+            <h2>Одна страница — одно тестовое под одну роль.</h2>
           </div>
         </aside>
       </section>
 
-      <section id="problem" class="section-shell">
+      <section id="roles" class="section-shell">
         <div class="section-copy">
-          <p class="eyebrow">Контекст</p>
-          <h2>Контекст</h2>
-        </div>
-        <div class="issue-grid" id="issues"></div>
-      </section>
-
-      <section id="workflow" class="section-shell flow-shell">
-        <div class="section-copy">
-          <p class="eyebrow">Схема работы</p>
-          <h2>Что вам необходимо сделать</h2>
+          <p class="eyebrow">Роли</p>
+          <h2>Доступные тестовые</h2>
           <p>
-            Решение не обязано быть технически сложным. Важнее, чтобы в нем
-            была видна логика работы с неоднозначными входящими и способность
-            навести порядок там, где нет готовой структуры.
-          </p>
-        </div>
-        <div class="flow-grid" id="workflow"></div>
-      </section>
-
-      <section id="materials" class="section-shell demo-shell">
-        <div class="section-copy">
-          <p class="eyebrow">Материалы</p>
-          <h2>С чем вам предстоит работать</h2>
-          <p>
-            Ниже исходные сообщения. Они намеренно неоднородны: где-то сроки
-            заданы относительно, где-то в одном сообщении смешано несколько
-            смыслов, а где-то критичность приходится выводить из контекста.
+            Найдите свою роль и откройте отдельную страницу с полным описанием
+            задания, материалов и критериев.
           </p>
         </div>
 
-        <div class="dataset-card">
-          <div class="dataset-copy">
-            <h3>Файлы с исходными сообщениями</h3>
-            <p>
-              Исходные сообщения можно открыть прямо в браузере или забрать
-              отдельным файлом для работы.
+        <div class="collection-grid">
+          <article class="role-card">
+            <p class="panel-kicker">Руководитель проектов</p>
+            <h3>PM L2</h3>
+            <p class="role-copy">
+              Вам необходимо разобрать поток неструктурированных сообщений,
+              показать исходные данные, выделить задачи и привести их к рабочей
+              структуре для команды.
             </p>
-          </div>
-          <div class="dataset-links">
-            <a class="dataset-link" href="./input/messages.csv" target="_blank" rel="noreferrer">
-              Скачать сообщения
-            </a>
-          </div>
-        </div>
+            <div class="role-meta">
+              <span class="role-chip">2 часа</span>
+              <span class="role-chip">HTML-страница</span>
+              <span class="role-chip">Исходные сообщения</span>
+            </div>
+            <div class="role-links">
+              <a class="button button-primary" href="./project-manager.html">
+                Открыть тестовое
+              </a>
+            </div>
+          </article>
 
-        <div class="demo-column">
-          <div class="panel-head">
-            <p class="panel-kicker">Сообщения</p>
-            <h3>Исходные сообщения</h3>
-          </div>
-          <div id="messages" class="message-list"></div>
+          <article class="role-card">
+            <p class="panel-kicker">Стажер AI-разработчик</p>
+            <h3>AI Developer Intern</h3>
+            <p class="role-copy">
+              Вам необходимо собрать AI-ассистента для команды: принять вопрос,
+              отправить его в модель, красиво показать ответ, сохранить историю
+              запросов и объяснить принятые решения.
+            </p>
+            <div class="role-meta">
+              <span class="role-chip">1.5 часа</span>
+              <span class="role-chip">Видео 24 часа</span>
+              <span class="role-chip">AI-дашборд</span>
+            </div>
+            <div class="role-links">
+              <a class="button button-primary" href="./ai-developer-intern.html">
+                Открыть тестовое
+              </a>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section id="timebox" class="section-shell">
+      <section id="notes" class="section-shell demo-shell">
         <div class="section-copy">
-          <p class="eyebrow">Таймбокс</p>
-          <h2>Ограничение по времени</h2>
+          <p class="eyebrow">Что важно</p>
+          <h2>Общие правила</h2>
           <p>
-            На выполнение задачи отводится 2 часа. Ожидается не идеальная
-            полировка, а зрелый способ разобраться с хаосом, расставить
-            акценты и предложить рабочее решение.
+            Роли разные, но есть несколько базовых ожиданий, которые относятся
+            ко всем тестовым на этом сайте.
           </p>
+        </div>
+
+        <div class="note-grid">
+          <article class="note-card">
+            <h3>Решение остается на вашей стороне</h3>
+            <p>
+              Вам необходимо самостоятельно выбрать способ реализации и
+              обосновать ключевые решения, которые вы приняли по ходу работы.
+            </p>
+          </article>
+          <article class="note-card">
+            <h3>Итог должен открываться по ссылке</h3>
+            <p>
+              Финальный результат должен быть удобен для просмотра: по
+              возможности в браузере, без долгой ручной настройки со стороны
+              проверяющего.
+            </p>
+          </article>
         </div>
       </section>
     </main>
-
-    <script src="./app.js?v=20260429-2225"></script>
   </body>
 </html>

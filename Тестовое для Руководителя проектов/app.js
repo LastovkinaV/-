@@ -99,10 +99,14 @@ const messages = [
 
 const heroMetricsRoot = document.querySelector('#hero-metrics');
 const issuesRoot = document.querySelector('#issues');
-const workflowRoot = document.querySelector('#workflow');
+const workflowRoot = document.querySelector('#workflow-grid');
 const messagesRoot = document.querySelector('#messages');
 
 function renderHeroMetrics() {
+  if (!heroMetricsRoot) {
+    return;
+  }
+
   heroMetricsRoot.innerHTML = heroMetrics
     .map(
       (item) => `
@@ -117,6 +121,10 @@ function renderHeroMetrics() {
 }
 
 function renderIssues() {
+  if (!issuesRoot) {
+    return;
+  }
+
   issuesRoot.innerHTML = issues
     .map(
       (item) => `
@@ -131,6 +139,10 @@ function renderIssues() {
 }
 
 function renderWorkflow() {
+  if (!workflowRoot) {
+    return;
+  }
+
   workflowRoot.innerHTML = workflow
     .map(
       (item) => `
@@ -145,6 +157,10 @@ function renderWorkflow() {
 }
 
 function renderMessages() {
+  if (!messagesRoot) {
+    return;
+  }
+
   messagesRoot.innerHTML = messages
     .map(
       (message, index) => `

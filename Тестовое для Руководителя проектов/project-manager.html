@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="robots"
+      content="noindex, nofollow, noarchive, nosnippet, noimageindex"
+    />
+    <meta
+      name="googlebot"
+      content="noindex, nofollow, noarchive, nosnippet, noimageindex"
+    />
+    <title>Тестовое — Руководитель проектов</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="background-orb orb-left"></div>
+    <div class="background-orb orb-right"></div>
+
+    <main class="page">
+      <header class="topbar">
+        <a class="brand" href="./index.html">
+          <span class="brand-text">Test Library</span>
+        </a>
+        <nav class="topnav">
+          <a href="./index.html">Все тестовые</a>
+          <a href="#problem">Контекст</a>
+          <a href="#workflow">Схема</a>
+          <a href="#materials">Материалы</a>
+          <a href="#timebox">Таймбокс</a>
+        </nav>
+      </header>
+
+      <section id="top" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">PM L2 / Product Task</p>
+          <h1>За 2 часа разберите хаос во входящих задачах.</h1>
+          <p class="lead">
+            Вам будет предоставлен набор неструктурированных сообщений от
+            сотрудников. Предложите и реализуйте решение, которое помогает
+            разобрать этот поток: показать исходные сообщения, выделить из них
+            отдельные задачи и привести их к понятной структуре для дальнейшей
+            работы команды.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#materials">Открыть материалы</a>
+            <a class="button button-secondary" href="#workflow">Задачи</a>
+          </div>
+
+          <div class="hero-metrics" id="hero-metrics"></div>
+        </div>
+
+        <aside class="hero-board">
+          <div class="board-card board-card-accent">
+            <p class="board-label">Задача</p>
+            <h2>
+              Понять, как вы принимаете решения в условиях хаотичного и
+              неполного контекста.
+            </h2>
+          </div>
+
+          <div class="board-stack">
+            <div class="board-card board-card-inverse">
+              <p class="board-label">Принцип</p>
+              <p class="board-copy board-copy-strong">
+                Важные договоренности не должны жить в личке. Они должны
+                превращаться в предсказуемый и управляемый процесс.
+              </p>
+            </div>
+
+            <div class="board-card">
+              <p class="board-label">Формат</p>
+              <p class="board-copy">
+                Это продуктовая задача. Решение остается на вашей стороне.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="problem" class="section-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Контекст</p>
+          <h2>Контекст</h2>
+        </div>
+        <div class="issue-grid" id="issues"></div>
+      </section>
+
+      <section id="workflow" class="section-shell flow-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Схема работы</p>
+          <h2>Что вам необходимо сделать</h2>
+          <p>
+            Решение не обязано быть технически сложным. Важнее, чтобы в нем
+            была видна логика работы с неоднозначными входящими и способность
+            навести порядок там, где нет готовой структуры.
+          </p>
+        </div>
+        <div class="flow-grid" id="workflow-grid"></div>
+      </section>
+
+      <section id="materials" class="section-shell demo-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Материалы</p>
+          <h2>С чем вам предстоит работать</h2>
+          <p>
+            Ниже исходные сообщения. Они намеренно неоднородны: где-то сроки
+            заданы относительно, где-то в одном сообщении смешано несколько
+            смыслов, а где-то критичность приходится выводить из контекста.
+          </p>
+        </div>
+
+        <div class="dataset-card">
+          <div class="dataset-copy">
+            <h3>Файлы с исходными сообщениями</h3>
+            <p>
+              Исходные сообщения можно открыть прямо в браузере или забрать
+              отдельным файлом для работы.
+            </p>
+          </div>
+          <div class="dataset-links">
+            <a class="dataset-link" href="./input/messages.csv" target="_blank" rel="noreferrer">
+              Скачать сообщения
+            </a>
+          </div>
+        </div>
+
+        <div class="demo-column">
+          <div class="panel-head">
+            <p class="panel-kicker">Сообщения</p>
+            <h3>Исходные сообщения</h3>
+          </div>
+          <div id="messages" class="message-list"></div>
+        </div>
+      </section>
+
+      <section id="timebox" class="section-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Таймбокс</p>
+          <h2>Ограничение по времени</h2>
+          <p>
+            На выполнение задачи отводится 2 часа. Ожидается не идеальная
+            полировка, а зрелый способ разобраться с хаосом, расставить
+            акценты и предложить рабочее решение.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js?v=20260505-01"></script>
+  </body>
+</html>
