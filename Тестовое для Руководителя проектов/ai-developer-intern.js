@@ -1,7 +1,7 @@
 const aiHeroMetrics = [
   {
     label: 'Таймбокс',
-    value: '1.5ч',
+    value: '2ч',
     copy: 'На код и сборку работающего мини-дашборда'
   },
   {
