@@ -136,22 +136,64 @@ body::before {
 }
 
 .home-hero {
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1.02fr) minmax(340px, 0.98fr);
   align-items: start;
 }
 
 .home-hero .hero-copy {
-  max-width: none;
+  max-width: 760px;
 }
 
 .home-hero h1 {
-  max-width: none;
-  font-size: clamp(3rem, 5vw, 4.7rem);
+  max-width: 10ch;
+  font-size: clamp(3rem, 5.2vw, 5rem);
   line-height: 0.95;
 }
 
 .home-hero .lead {
-  max-width: 72ch;
+  max-width: 46ch;
+}
+
+.home-rules {
+  align-content: start;
+}
+
+.home-rules-shell {
+  padding: 28px;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--dark-line);
+  background: linear-gradient(180deg, #0f0f0f, #151515);
+  color: var(--surface);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.home-rules-shell .eyebrow {
+  color: rgba(1, 172, 106, 0.82);
+}
+
+.home-rules-shell h2 {
+  margin: 12px 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  line-height: 0.92;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.home-rules-copy {
+  max-width: 44ch;
+  margin: 14px 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.56;
+}
+
+.home-rules-grid {
+  grid-template-columns: 1fr;
+  margin-top: 20px;
+}
+
+.home-rules-card {
+  min-height: 0;
 }
 
 .ai-hero {
