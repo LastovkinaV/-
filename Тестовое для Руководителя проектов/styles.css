@@ -141,17 +141,39 @@ body::before {
 }
 
 .home-hero .hero-copy {
-  max-width: 860px;
+  max-width: 1120px;
 }
 
 .home-hero h1 {
-  max-width: 8ch;
-  font-size: clamp(3rem, 6.3vw, 5.3rem);
+  max-width: 12ch;
+  font-size: clamp(3.4rem, 7vw, 6rem);
   line-height: 0.92;
 }
 
 .home-hero .lead {
-  max-width: 42ch;
+  max-width: 48ch;
+}
+
+.ai-hero {
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  align-items: start;
+}
+
+.ai-hero .hero-copy {
+  max-width: 860px;
+}
+
+.ai-hero h1 {
+  max-width: 11ch;
+  font-size: clamp(3.4rem, 7vw, 5.8rem);
+}
+
+.ai-hero .lead {
+  max-width: 54ch;
+}
+
+.ai-hero .hero-board {
+  align-content: start;
 }
 
 .hero,
@@ -191,6 +213,7 @@ body::before {
   font-family: var(--font-display);
   font-weight: 900;
   letter-spacing: -0.05em;
+  text-wrap: balance;
 }
 
 .hero h1 {
@@ -198,6 +221,18 @@ body::before {
   font-size: clamp(3.7rem, 8vw, 6.6rem);
   line-height: 0.9;
   text-transform: uppercase;
+}
+
+.hero-title-balance {
+  text-wrap: balance;
+}
+
+.hero-title-balance br {
+  display: block;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .lead,
@@ -758,5 +793,9 @@ body::before {
   .hero h1,
   .section-copy h2 {
     font-size: clamp(2.4rem, 11vw, 4rem);
+  }
+
+  .nowrap {
+    white-space: normal;
   }
 }
