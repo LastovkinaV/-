@@ -135,8 +135,70 @@ body::before {
   color: var(--surface);
 }
 
+.home-hero {
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  align-items: start;
+}
+
+.home-hero .hero-copy {
+  max-width: 760px;
+}
+
+.home-hero .hero-board {
+  align-self: start;
+}
+
 .home-hero h1 {
+  max-width: 8ch;
+  font-size: clamp(3rem, 6.3vw, 5.3rem);
+  line-height: 0.92;
+}
+
+.home-hero .lead {
+  max-width: 42ch;
+}
+
+.home-hero .board-card-accent {
+  min-height: 0;
+  padding: 24px;
+}
+
+.home-hero .board-card-accent h2 {
   max-width: 11ch;
+  font-size: clamp(1.9rem, 2.8vw, 2.8rem);
+}
+
+.ai-hero {
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 430px);
+  align-items: start;
+}
+
+.ai-hero .hero-copy {
+  max-width: 780px;
+}
+
+.ai-hero .hero-board {
+  align-self: start;
+}
+
+.ai-hero h1 {
+  max-width: 8.6ch;
+  font-size: clamp(3rem, 5.7vw, 5.2rem);
+  line-height: 0.92;
+}
+
+.ai-hero .lead {
+  max-width: 46ch;
+}
+
+.ai-hero .board-card-accent {
+  min-height: 0;
+  padding: 24px;
+}
+
+.ai-hero .board-card-accent h2 {
+  max-width: 11ch;
+  font-size: clamp(2rem, 2.7vw, 2.9rem);
 }
 
 .hero,
