@@ -136,24 +136,22 @@ body::before {
 }
 
 .home-hero {
-  width: min(100%, 860px);
   grid-template-columns: 1fr;
   align-items: start;
-  margin-right: auto;
 }
 
 .home-hero .hero-copy {
-  max-width: 720px;
+  max-width: 1080px;
 }
 
 .home-hero h1 {
-  max-width: 7ch;
-  font-size: clamp(3.2rem, 6.2vw, 5.3rem);
+  max-width: 12ch;
+  font-size: clamp(3.6rem, 7vw, 6.1rem);
   line-height: 0.92;
 }
 
 .home-hero .lead {
-  max-width: 32ch;
+  max-width: 48ch;
 }
 
 .ai-hero {
