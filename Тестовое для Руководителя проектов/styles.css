@@ -201,6 +201,11 @@ body::before {
   align-items: start;
 }
 
+.accountant-hero {
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
 .pm-hero {
   grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
   align-items: start;
@@ -227,13 +232,26 @@ body::before {
   max-width: 860px;
 }
 
+.accountant-hero .hero-copy {
+  max-width: 980px;
+}
+
 .ai-hero h1 {
   max-width: 11ch;
   font-size: clamp(3.4rem, 7vw, 5.8rem);
 }
 
+.accountant-hero h1 {
+  max-width: 10.5ch;
+  font-size: clamp(3.3rem, 6.8vw, 5.7rem);
+}
+
 .ai-hero .lead {
   max-width: 54ch;
+}
+
+.accountant-hero .lead {
+  max-width: 60ch;
 }
 
 .ai-hero .hero-board {
@@ -473,7 +491,7 @@ body::before {
 }
 
 .collection-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .role-card {

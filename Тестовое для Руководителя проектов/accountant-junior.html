@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="robots"
+      content="noindex, nofollow, noarchive, nosnippet, noimageindex"
+    />
+    <meta
+      name="googlebot"
+      content="noindex, nofollow, noarchive, nosnippet, noimageindex"
+    />
+    <title>Тестовое — Бухгалтер (джун)</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="background-orb orb-left"></div>
+    <div class="background-orb orb-right"></div>
+
+    <main class="page">
+      <header class="topbar">
+        <a class="brand" href="./index.html">
+          <span class="brand-text">Test Library</span>
+        </a>
+        <nav class="topnav">
+          <a href="./index.html">Все тестовые</a>
+          <a href="#focus">Фокус</a>
+          <a href="#workflow">Шаги</a>
+          <a href="#materials">Материалы</a>
+          <a href="#deliverables">На выходе</a>
+        </nav>
+      </header>
+
+      <section id="top" class="hero accountant-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Junior Accountant / AI Task</p>
+          <h1 class="hero-title-balance hero-title-accountant">
+            За 2 часа<br />
+            подготовите<br />
+            закрывающие документы<br />
+            по договору.
+          </h1>
+          <p class="lead">
+            Вам будет предоставлен договор, состав работ и реквизиты сторон.
+            Вам необходимо с помощью AI разобрать материалы, подготовить
+            закрывающие документы по участку реализации и кратко объяснить
+            логику выполнения.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#materials">Открыть материалы</a>
+            <a class="button button-secondary" href="#deliverables">
+              Что сдать
+            </a>
+          </div>
+
+          <div class="hero-metrics" id="accountant-hero-metrics"></div>
+        </div>
+      </section>
+
+      <section id="focus" class="section-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Фокус проверки</p>
+          <h2>На что мы будем смотреть</h2>
+          <p>
+            В этом тестовом важно не только собрать комплект документов, но и
+            показать, что вы умеете читать договор, аккуратно считать суммы и
+            использовать AI как рабочий инструмент.
+          </p>
+        </div>
+        <div id="accountant-focus-grid" class="issue-grid"></div>
+      </section>
+
+      <section id="workflow" class="section-shell flow-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Шаги</p>
+          <h2>Что вам необходимо сделать</h2>
+          <p>
+            Материалы уже подготовлены. Ваша задача — пройти по ним как по
+            реальному кейсу на участке реализации и подготовить комплект
+            закрывающих документов по договору.
+          </p>
+        </div>
+        <div id="accountant-workflow-grid" class="flow-grid"></div>
+      </section>
+
+      <section id="materials" class="section-shell demo-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Материалы</p>
+          <h2>Что вам будет предоставлено</h2>
+          <p>
+            Ниже собраны договор, состав работ и реквизиты сторон. Их можно
+            открывать отдельно или забрать локально и использовать при работе
+            с AI.
+          </p>
+        </div>
+
+        <div class="dataset-card">
+          <div class="dataset-copy">
+            <h3>Файлы по договору</h3>
+            <p>
+              Внутри есть договор, перечень работ, контекст закрытия месяца и
+              карточка сторон, на основании которых нужно подготовить
+              закрывающие документы.
+            </p>
+          </div>
+          <div class="dataset-links">
+            <a class="dataset-link" href="./input/accountant-brief.txt" download="accountant-brief.txt">
+              Скачать бриф
+            </a>
+            <a class="dataset-link" href="./input/accountant-contract.md" download="accountant-contract.md">
+              Договор
+            </a>
+            <a class="dataset-link" href="./input/accountant-work-items.csv" download="accountant-work-items.csv">
+              Состав работ
+            </a>
+            <a class="dataset-link" href="./input/accountant-counterparty-card.md" download="accountant-counterparty-card.md">
+              Реквизиты
+            </a>
+            <a class="dataset-link" href="./input/accountant-context.md" download="accountant-context.md">
+              Контекст
+            </a>
+          </div>
+        </div>
+
+        <div class="note-grid">
+          <article class="note-card">
+            <h3>Как использовать AI</h3>
+            <ul class="note-list">
+              <li>Использование AI в этом тестовом обязательно</li>
+              <li>Вы можете использовать его для разбора договора, подготовки черновика документов и проверки состава позиций</li>
+              <li>Важно отдельно показать, что вы проверили самостоятельно</li>
+            </ul>
+          </article>
+          <article class="note-card">
+            <h3>Что не считается хорошим решением</h3>
+            <ul class="note-list">
+              <li>Просто загрузить договор в модель и скопировать ответ без проверки</li>
+              <li>Подготовить документы без пояснения логики выполнения</li>
+              <li>Не объяснить, где именно AI ускорил работу, а что вы проверили вручную</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="deliverables" class="section-shell">
+        <div class="section-copy">
+          <p class="eyebrow">На выходе</p>
+          <h2>Что приложить</h2>
+        </div>
+
+        <div class="stack-grid">
+          <article class="stack-card">
+            <h3>Закрывающие документы</h3>
+            <p>
+              Вам необходимо приложить подготовленные закрывающие документы по
+              позициям договора в понятном для проверки виде.
+            </p>
+          </article>
+          <article class="stack-card">
+            <h3>Пояснение по логике и AI</h3>
+            <p>
+              Отдельно коротко опишите, как вы подошли к выполнению задачи и в
+              чем именно AI помог вам ускорить работу.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="./accountant-junior.js?v=20260506-02"></script>
+  </body>
+</html>

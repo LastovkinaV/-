@@ -9,11 +9,18 @@
 - `index.html` — каталог всех тестовых
 - `project-manager.html` — тестовое для руководителя проектов
 - `ai-developer-intern.html` — тестовое для стажера AI-разработчика
+- `accountant-junior.html` — тестовое для бухгалтера-джуна
 - `styles.css` — общие стили
 - `app.js` — контент страницы PM
 - `ai-developer-intern.js` — контент страницы AI intern
+- `accountant-junior.js` — контент страницы бухгалтера
 - `input/messages.csv` — основной датасет для PM
 - `input/ai-developer-brief.txt` — краткий бриф для AI intern
+- `input/accountant-brief.txt` — краткий бриф для бухгалтера
+- `input/accountant-contract.md` — договор для бухгалтерского тестового
+- `input/accountant-work-items.csv` — состав работ и сумм по договору
+- `input/accountant-counterparty-card.md` — карточка сторон
+- `input/accountant-context.md` — контекст закрытия месяца для бухгалтера
 
 ## Локальный просмотр
 

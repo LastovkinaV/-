@@ -17,12 +17,14 @@
 - `index.html` — каталог тестовых и общие правила
 - `project-manager.html` — тестовое для руководителя проектов
 - `ai-developer-intern.html` — тестовое для стажера AI-разработчика
+- `accountant-junior.html` — тестовое для бухгалтера-джуна
 
 Прямые ссылки:
 
 - каталог: `https://lastovkinav.github.io/-/`
 - PM: `https://lastovkinav.github.io/-/project-manager.html`
 - AI intern: `https://lastovkinav.github.io/-/ai-developer-intern.html`
+- Accountant: `https://lastovkinav.github.io/-/accountant-junior.html`
 
 ## Как открыть локально
 
@@ -46,13 +48,21 @@ Cmd + Shift + R
 - `index.html` — главная страница-каталог
 - `project-manager.html` — страница тестового для PM
 - `ai-developer-intern.html` — страница тестового для AI intern
+- `accountant-junior.html` — страница тестового для бухгалтера
 - `styles.css` — общие стили всех страниц
 - `app.js` — данные и карточки страницы PM
 - `ai-developer-intern.js` — данные и карточки страницы AI intern
+- `accountant-junior.js` — данные и карточки страницы бухгалтера
 - `input/messages.csv` — основной датасет для PM
 - `input/messages.md` — тот же набор сообщений в markdown
 - `input/ai-developer-brief.txt` — краткий бриф для AI intern
 - `input/ai-developer-brief.md` — markdown-версия того же брифа
+- `input/accountant-brief.txt` — краткий бриф для бухгалтера
+- `input/accountant-brief.md` — markdown-версия брифа для бухгалтера
+- `input/accountant-contract.md` — договор для бухгалтерского тестового
+- `input/accountant-work-items.csv` — состав работ и сумм по договору
+- `input/accountant-counterparty-card.md` — реквизиты сторон
+- `input/accountant-context.md` — контекст закрытия месяца для бухгалтера
 - `REQUEST_TO_ADMINS.md` — готовый текст для администраторов
 - `DEPLOY.md` — инструкция по публикации
 - `robots.txt` — запрет индексации

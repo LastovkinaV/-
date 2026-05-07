@@ -14,6 +14,9 @@
 - `index.html` — каталог тестовых
 - `project-manager.html` — тестовое для PM
 - `ai-developer-intern.html` — тестовое для AI intern
+- `accountant-junior.html` — тестовое для бухгалтера-джуна
+- `input/accountant-contract.md` — договор для бухгалтерского тестового
+- `input/accountant-work-items.csv` — состав работ по договору
 
 ## Основной вариант: GitHub Pages
 
@@ -50,6 +53,7 @@ git push origin main
 - каталог: `https://lastovkinav.github.io/-/`
 - PM: `https://lastovkinav.github.io/-/project-manager.html`
 - AI intern: `https://lastovkinav.github.io/-/ai-developer-intern.html`
+- Accountant: `https://lastovkinav.github.io/-/accountant-junior.html`
 
 ## Локальная проверка перед публикацией
 
