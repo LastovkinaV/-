@@ -15,8 +15,8 @@
 - `project-manager.html` — тестовое для PM
 - `ai-developer-intern.html` — тестовое для AI intern
 - `accountant-junior.html` — тестовое для бухгалтера-джуна
-- `input/accountant-contract.md` — договор для бухгалтерского тестового
-- `input/accountant-work-items.csv` — состав работ по договору
+- `input/accountant-contract.txt` — договор для бухгалтерского тестового
+- `input/accountant-work-items.txt` — состав работ по договору
 
 ## Основной вариант: GitHub Pages
 

@@ -14,7 +14,7 @@
 - тестовое для бухгалтера-джуна: `accountant-junior.html`
 - данные страниц: `app.js`, `ai-developer-intern.js`
 - данные страницы бухгалтера: `accountant-junior.js`
-- исходные материалы: `input/messages.csv`, `input/messages.md`, `input/ai-developer-brief.txt`, `input/accountant-brief.txt`, `input/accountant-contract.md`, `input/accountant-work-items.csv`, `input/accountant-counterparty-card.md`, `input/accountant-context.md`
+- исходные материалы: `input/messages.csv`, `input/messages.md`, `input/ai-developer-brief.txt`, `input/accountant-brief.txt`, `input/accountant-contract.txt`, `input/accountant-work-items.txt`, `input/accountant-counterparty-card.txt`, `input/accountant-context.txt`
 - служебная документация: `START_HERE.md`, `DEPLOY.md`, `REQUEST_TO_ADMINS.md`
 - автодеплой на GitHub Pages: `.github/workflows/deploy-pages.yml`
 
