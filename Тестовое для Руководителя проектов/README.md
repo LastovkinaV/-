@@ -10,10 +10,12 @@
 - `project-manager.html` — тестовое для руководителя проектов
 - `ai-developer-intern.html` — тестовое для стажера AI-разработчика
 - `accountant-junior.html` — тестовое для бухгалтера-джуна
+- `support-specialist.html` — тестовое для специалиста технической поддержки
 - `styles.css` — общие стили
 - `app.js` — контент страницы PM
 - `ai-developer-intern.js` — контент страницы AI intern
 - `accountant-junior.js` — контент страницы бухгалтера
+- `support-specialist.js` — контент страницы специалиста технической поддержки
 - `input/messages.csv` — основной датасет для PM
 - `input/ai-developer-brief.txt` — краткий бриф для AI intern
 - `input/accountant-brief.txt` — краткий бриф для бухгалтера
@@ -21,6 +23,7 @@
 - `input/accountant-work-items.txt` — состав работ и сумм по договору
 - `input/accountant-counterparty-card.txt` — карточка сторон
 - `input/accountant-context.txt` — контекст закрытия месяца для бухгалтера
+- `input/support-specialist-brief.txt` — краткий бриф для специалиста технической поддержки
 
 ## Локальный просмотр
 

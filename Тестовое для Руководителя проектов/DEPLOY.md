@@ -15,6 +15,7 @@
 - `project-manager.html` — тестовое для PM
 - `ai-developer-intern.html` — тестовое для AI intern
 - `accountant-junior.html` — тестовое для бухгалтера-джуна
+- `support-specialist.html` — тестовое для специалиста технической поддержки
 - `input/accountant-contract.txt` — договор для бухгалтерского тестового
 - `input/accountant-work-items.txt` — состав работ по договору
 
@@ -54,6 +55,7 @@ git push origin main
 - PM: `https://lastovkinav.github.io/-/project-manager.html`
 - AI intern: `https://lastovkinav.github.io/-/ai-developer-intern.html`
 - Accountant: `https://lastovkinav.github.io/-/accountant-junior.html`
+- Support specialist: `https://lastovkinav.github.io/-/support-specialist.html`
 
 ## Локальная проверка перед публикацией
 

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="robots"
+      content="noindex, nofollow, noarchive, nosnippet, noimageindex"
+    />
+    <meta
+      name="googlebot"
+      content="noindex, nofollow, noarchive, nosnippet, noimageindex"
+    />
+    <title>Тестовое — Специалист технической поддержки</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="background-orb orb-left"></div>
+    <div class="background-orb orb-right"></div>
+
+    <main class="page">
+      <header class="topbar">
+        <a class="brand" href="./index.html">
+          <span class="brand-text">Test Library</span>
+        </a>
+        <nav class="topnav">
+          <a href="./index.html">Все тестовые</a>
+          <a href="#legend">Легенда</a>
+          <a href="#functional">Функционал</a>
+          <a href="#deliverables">Что прислать</a>
+          <a href="#materials">Материалы</a>
+        </nav>
+      </header>
+
+      <section id="top" class="hero accountant-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Support Specialist / Bot Task</p>
+          <h1 class="hero-title-balance">
+            Спасите техподдержку от просроченных сообщений.
+          </h1>
+          <p class="lead">
+            Привет! Мы знаем, что тестовые задания иногда вызывают легкое
+            волнение. Но сегодня у вас простая и благородная миссия: шаг за
+            шагом довести до рабочего прототипа Telegram-бота для команды
+            поддержки.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#functional">Открыть задание</a>
+            <a class="button button-secondary" href="#deliverables">
+              Что прислать
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="legend" class="section-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Легенда</p>
+          <h2>Что должен делать бот</h2>
+          <p>
+            В Telegram-чате поддержки пользователи пишут обычные вопросы и
+            сообщения об инцидентах. Бот должен помогать команде быстро
+            разбирать входящий поток и не пропускать обращения, которые требуют
+            реакции.
+          </p>
+        </div>
+      </section>
+
+      <section id="functional" class="section-shell flow-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Обязательные требования</p>
+          <h2>Что необходимо реализовать</h2>
+          <p>
+            Базовая версия должна быть рабочей и проверяемой. Ниже полный
+            список логики, которую нужно заложить в прототип.
+          </p>
+        </div>
+        <div id="support-functionality" class="flow-grid"></div>
+      </section>
+
+      <section id="deliverables" class="section-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Ожидаемый результат</p>
+          <h2>Что прислать</h2>
+          <p>
+            Приложите все так, чтобы проверяющий мог быстро запустить прототип
+            и увидеть ключевой сценарий без долгой настройки.
+          </p>
+        </div>
+        <div id="support-deliverables" class="stack-grid"></div>
+      </section>
+
+      <section id="materials" class="section-shell demo-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Материалы</p>
+          <h2>Краткий бриф и советы</h2>
+          <p>
+            Текст задания можно сохранить отдельным файлом. Чтобы успеть,
+            используйте готовые библиотеки, шаблоны, списки и словари.
+          </p>
+        </div>
+
+        <div class="dataset-card">
+          <div class="dataset-copy">
+            <h3>Файл с кратким брифом</h3>
+            <p>
+              Внутри собран тот же бриф в компактном текстовом виде.
+            </p>
+          </div>
+          <div class="dataset-links">
+            <a
+              class="dataset-link"
+              href="./input/support-specialist-brief.txt"
+              download="support-specialist-brief.txt"
+            >
+              Скачать бриф
+            </a>
+          </div>
+        </div>
+
+        <div class="note-grid">
+          <article class="note-card">
+            <h3>Что показать в демо</h3>
+            <ul class="note-list">
+              <li>Пользователь пишет: "Срочно! Не работает сервер db01"</li>
+              <li>Через 5 минут или в ускоренном режиме приходит алерт</li>
+              <li>Через 15 минут или за 1 минуту для теста приходит дайджест</li>
+            </ul>
+          </article>
+          <article class="note-card">
+            <h3>На что обратить внимание</h3>
+            <ul class="note-list">
+              <li>Классификация должна быть одним вызовом LLM</li>
+              <li>Дубли ищутся по смыслу через embeddings и cosine similarity</li>
+              <li>Последние 10 сообщений нужно хранить для проверки повторов</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="./support-specialist.js?v=20260605-01"></script>
+  </body>
+</html>

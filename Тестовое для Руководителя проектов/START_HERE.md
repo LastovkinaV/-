@@ -18,6 +18,7 @@
 - `project-manager.html` — тестовое для руководителя проектов
 - `ai-developer-intern.html` — тестовое для стажера AI-разработчика
 - `accountant-junior.html` — тестовое для бухгалтера-джуна
+- `support-specialist.html` — тестовое для специалиста технической поддержки
 
 Прямые ссылки:
 
@@ -25,6 +26,7 @@
 - PM: `https://lastovkinav.github.io/-/project-manager.html`
 - AI intern: `https://lastovkinav.github.io/-/ai-developer-intern.html`
 - Accountant: `https://lastovkinav.github.io/-/accountant-junior.html`
+- Support specialist: `https://lastovkinav.github.io/-/support-specialist.html`
 
 ## Как открыть локально
 
@@ -49,10 +51,12 @@ Cmd + Shift + R
 - `project-manager.html` — страница тестового для PM
 - `ai-developer-intern.html` — страница тестового для AI intern
 - `accountant-junior.html` — страница тестового для бухгалтера
+- `support-specialist.html` — страница тестового для специалиста технической поддержки
 - `styles.css` — общие стили всех страниц
 - `app.js` — данные и карточки страницы PM
 - `ai-developer-intern.js` — данные и карточки страницы AI intern
 - `accountant-junior.js` — данные и карточки страницы бухгалтера
+- `support-specialist.js` — данные и карточки страницы специалиста технической поддержки
 - `input/messages.csv` — основной датасет для PM
 - `input/messages.md` — тот же набор сообщений в markdown
 - `input/ai-developer-brief.txt` — краткий бриф для AI intern
@@ -63,6 +67,7 @@ Cmd + Shift + R
 - `input/accountant-work-items.txt` — состав работ и сумм по договору
 - `input/accountant-counterparty-card.txt` — реквизиты сторон
 - `input/accountant-context.txt` — контекст закрытия месяца для бухгалтера
+- `input/support-specialist-brief.txt` — краткий бриф для специалиста технической поддержки
 - `REQUEST_TO_ADMINS.md` — готовый текст для администраторов
 - `DEPLOY.md` — инструкция по публикации
 - `robots.txt` — запрет индексации
