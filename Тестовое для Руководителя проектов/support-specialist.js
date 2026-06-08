@@ -1,3 +1,21 @@
+const supportHeroMetrics = [
+  {
+    label: 'Таймбокс',
+    value: '2ч',
+    copy: 'На код, проверку сценария и краткое описание решения'
+  },
+  {
+    label: 'Формат',
+    value: '.py',
+    copy: 'Один рабочий файл с Telegram-ботом'
+  },
+  {
+    label: 'Среда',
+    value: 'TG',
+    copy: 'Прототип должен быть виден в Telegram-чате'
+  }
+];
+
 const supportFunctionality = [
   {
     step: '1',
@@ -50,8 +68,27 @@ const supportDeliverables = [
   }
 ];
 
+const supportMetricsRoot = document.querySelector('#support-hero-metrics');
 const supportFunctionalityRoot = document.querySelector('#support-functionality');
 const supportDeliverablesRoot = document.querySelector('#support-deliverables');
+
+function renderSupportMetrics() {
+  if (!supportMetricsRoot) {
+    return;
+  }
+
+  supportMetricsRoot.innerHTML = supportHeroMetrics
+    .map(
+      (item) => `
+        <article class="metric-card">
+          <p class="metric-label">${item.label}</p>
+          <p class="metric-value">${item.value}</p>
+          <p class="metric-copy">${item.copy}</p>
+        </article>
+      `
+    )
+    .join('');
+}
 
 function renderSupportFunctionality() {
   if (!supportFunctionalityRoot) {
@@ -88,5 +125,6 @@ function renderSupportDeliverables() {
     .join('');
 }
 
+renderSupportMetrics();
 renderSupportFunctionality();
 renderSupportDeliverables();
