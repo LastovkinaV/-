@@ -254,6 +254,18 @@ body::before {
   max-width: 60ch;
 }
 
+.cmo-hero .hero-copy {
+  max-width: 1060px;
+}
+
+.cmo-hero h1 {
+  max-width: 11ch;
+}
+
+.cmo-hero .hero-metrics {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .ai-hero .hero-board {
   align-content: start;
 }

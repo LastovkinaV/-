@@ -16,6 +16,7 @@
 - `ai-developer-intern.html` — тестовое для AI intern
 - `accountant-junior.html` — тестовое для бухгалтера-джуна
 - `support-specialist.html` — тестовое для специалиста технической поддержки
+- `cmo-digital-packaging.html` — тестовое для CMO / Deputy CMO
 - `input/accountant-contract.txt` — договор для бухгалтерского тестового
 - `input/accountant-work-items.txt` — состав работ по договору
 
@@ -56,6 +57,7 @@ git push origin main
 - AI intern: `https://lastovkinav.github.io/-/ai-developer-intern.html`
 - Accountant: `https://lastovkinav.github.io/-/accountant-junior.html`
 - Support specialist: `https://lastovkinav.github.io/-/support-specialist.html`
+- CMO / Deputy CMO: `https://lastovkinav.github.io/-/cmo-digital-packaging.html`
 
 ## Локальная проверка перед публикацией
 

@@ -19,6 +19,7 @@
 - `ai-developer-intern.html` — тестовое для стажера AI-разработчика
 - `accountant-junior.html` — тестовое для бухгалтера-джуна
 - `support-specialist.html` — тестовое для специалиста технической поддержки
+- `cmo-digital-packaging.html` — тестовое для CMO / Deputy CMO
 
 Прямые ссылки:
 
@@ -27,6 +28,7 @@
 - AI intern: `https://lastovkinav.github.io/-/ai-developer-intern.html`
 - Accountant: `https://lastovkinav.github.io/-/accountant-junior.html`
 - Support specialist: `https://lastovkinav.github.io/-/support-specialist.html`
+- CMO / Deputy CMO: `https://lastovkinav.github.io/-/cmo-digital-packaging.html`
 
 ## Как открыть локально
 
@@ -52,11 +54,13 @@ Cmd + Shift + R
 - `ai-developer-intern.html` — страница тестового для AI intern
 - `accountant-junior.html` — страница тестового для бухгалтера
 - `support-specialist.html` — страница тестового для специалиста технической поддержки
+- `cmo-digital-packaging.html` — страница тестового для CMO / Deputy CMO
 - `styles.css` — общие стили всех страниц
 - `app.js` — данные и карточки страницы PM
 - `ai-developer-intern.js` — данные и карточки страницы AI intern
 - `accountant-junior.js` — данные и карточки страницы бухгалтера
 - `support-specialist.js` — данные и карточки страницы специалиста технической поддержки
+- `cmo-digital-packaging.js` — данные и карточки страницы CMO / Deputy CMO
 - `input/messages.csv` — основной датасет для PM
 - `input/messages.md` — тот же набор сообщений в markdown
 - `input/ai-developer-brief.txt` — краткий бриф для AI intern
@@ -68,6 +72,7 @@ Cmd + Shift + R
 - `input/accountant-counterparty-card.txt` — реквизиты сторон
 - `input/accountant-context.txt` — контекст закрытия месяца для бухгалтера
 - `input/support-specialist-brief.txt` — краткий бриф для специалиста технической поддержки
+- `input/cmo-digital-packaging-brief.txt` — краткий бриф для CMO / Deputy CMO
 - `REQUEST_TO_ADMINS.md` — готовый текст для администраторов
 - `DEPLOY.md` — инструкция по публикации
 - `robots.txt` — запрет индексации
