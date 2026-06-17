@@ -258,8 +258,11 @@ body::before {
   max-width: 1060px;
 }
 
-.cmo-hero h1 {
-  max-width: 11ch;
+.cmo-hero h1,
+.hero-title-cmo {
+  max-width: 13ch;
+  font-size: clamp(3rem, 6vw, 5.4rem);
+  line-height: 0.93;
 }
 
 .cmo-hero .hero-metrics {
