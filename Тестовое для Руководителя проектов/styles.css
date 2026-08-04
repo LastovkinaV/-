@@ -899,3 +899,49 @@ body::before {
     white-space: normal;
   }
 }
+
+
+.hr-hero .hero-copy {
+  max-width: 1120px;
+}
+
+.hr-hero h1,
+.hr-hero-title {
+  max-width: 13.5ch;
+  font-size: clamp(3rem, 5.4vw, 5.1rem);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+}
+
+.hr-task-grid {
+  grid-template-columns: repeat(2, minmax(360px, 1fr));
+}
+
+.hr-task-grid .flow-card {
+  min-height: 0;
+}
+
+.hr-task-grid .flow-card h3 {
+  max-width: 18ch;
+}
+
+.hr-task-grid .flow-card p {
+  max-width: 38ch;
+}
+
+@media (max-width: 900px) {
+  .hr-hero h1,
+  .hr-hero-title {
+    max-width: 11ch;
+    font-size: clamp(2.65rem, 11vw, 4.2rem);
+  }
+
+  .hr-task-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hr-task-grid .flow-card h3,
+  .hr-task-grid .flow-card p {
+    max-width: none;
+  }
+}
