@@ -40,13 +40,13 @@
           </h1>
           <p class="lead">
             Вам нужно с помощью AI разобрать учебную вакансию Backend-разработчика
-            Go / 1C Integration Engineer, сравнить 15 коротких резюме, выбрать
+            Go / 1C Integration Engineer, сравнить 35 коротких резюме, выбрать
             топ-5 кандидатов и оформить результат в виде веб-интерфейса.
           </p>
 
           <div class="hero-actions">
             <a class="button button-primary" href="#tasks">Открыть задание</a>
-            <a class="button button-secondary" href="#resumes">Смотреть резюме</a>
+            <a class="button button-secondary" href="#resumes">Скачать резюме</a>
             <a
               class="button button-secondary"
               href="./input/hr-intern-recruitment-materials.txt"
@@ -108,12 +108,13 @@
       <section id="resumes" class="section-shell demo-shell">
         <div class="section-copy">
           <p class="eyebrow">Материалы</p>
-          <h2>15 коротких резюме</h2>
+          <h2>35 коротких резюме</h2>
           <p>
             Резюме специально неоднородные: среди них есть сильные кандидаты,
-            почти подходящие профили и нерелевантные варианты. Ваша задача — не
-            просто найти ключевые слова, а объяснить баланс Go, 1С, интеграций и
-            production-мышления.
+            почти подходящие профили и нерелевантные варианты. Все 35 резюме
+            приложены отдельным TXT-файлом, чтобы кандидат мог загрузить их в
+            AI-инструмент и показать качество анализа, а не просто прочитать
+            карточки на странице.
           </p>
         </div>
 
@@ -121,7 +122,7 @@
           <div class="dataset-copy">
             <h3>Материалы одним файлом</h3>
             <p>
-              В файле собраны вакансия, все 15 резюме, задание и критерии
+              В файле собраны вакансия, все 35 резюме, задание и критерии
               оценки. Его можно скачать и использовать как рабочий источник
               для анализа в AI-инструментах.
             </p>
@@ -137,66 +138,14 @@
           </div>
         </div>
 
-        <div class="note-grid">
-          <article class="note-card">
-            <h3>Кандидат 1 — Backend Developer Go</h3>
-            <p>4 года backend, 2 года Go. Go, PostgreSQL, REST, Kafka, Docker. Разрабатывал сервис обработки заказов для e-commerce, работал с очередями, ретраями и дедупликацией событий. Интеграция с 1С:УТ через HTTP API, обмен заказами и остатками. Риск: мало опыта с gRPC.</p>
+        <div class="stack-grid">
+          <article class="stack-card">
+            <h3>Что внутри файла</h3>
+            <p>Учебная вакансия, 35 коротких резюме разной релевантности, инструкция к заданию и критерии оценки на 100 баллов.</p>
           </article>
-          <article class="note-card">
-            <h3>Кандидат 2 — 1C Developer</h3>
-            <p>6 лет 1С. 1С:ERP, 1С:УТ, обмены, регистры, документы, HTTP-сервисы. Настраивала интеграции 1С с сайтом, CRM и складской системой. Go: проходила курс, коммерческого опыта нет. Риск: сильная 1С, но нет backend-разработки на Go.</p>
-          </article>
-          <article class="note-card">
-            <h3>Кандидат 3 — Backend Engineer</h3>
-            <p>5 лет backend. Go, PostgreSQL, RabbitMQ, Redis, Docker, Kubernetes. Писал микросервисы для платежной платформы, участвовал в расследовании production-инцидентов. 1С: работал с интеграцией 1С:БП через промежуточный API, понимание документов и справочников базовое. Риск: 1С не основной профиль.</p>
-          </article>
-          <article class="note-card">
-            <h3>Кандидат 4 — PHP Backend Developer</h3>
-            <p>7 лет backend. PHP, Laravel, MySQL, REST, RabbitMQ. Поддерживала интернет-магазин, интеграции с CRM, службами доставки и платежами. 1С: обмен заказами через XML-файлы. Go: нет опыта. Риск: нет Go, подходит только как смежный кандидат.</p>
-          </article>
-          <article class="note-card">
-            <h3>Кандидат 5 — Go Developer</h3>
-            <p>3 года. Go, PostgreSQL, gRPC, REST, Kafka, Prometheus. Сервисы для логистики, обработка статусов доставок и складских событий. Участвовал в проекте интеграции с 1С:ERP, разбирал ошибки обмена остатков. Риск: не писал код в 1С, только интеграционный слой.</p>
-          </article>
-          <article class="note-card">
-            <h3>Кандидат 6 — Systems Analyst</h3>
-            <p>5 лет. BPMN, SQL, REST API, 1С:ERP, Jira, Confluence. Описывала интеграции между 1С, CRM и WMS, ставила задачи разработчикам. Go: нет разработки. Риск: сильная аналитика, но не backend-разработчик.</p>
-          </article>
-          <article class="note-card">
-            <h3>Кандидат 7 — Backend Developer Go</h3>
-            <p>2,5 года. Go, MongoDB, REST, Docker. Писал API для мобильного приложения, в основном CRUD-сервисы. 1С: нет опыта. Риск: слабое совпадение по интеграциям и 1С.</p>
-          </article>
-          <article class="note-card">
-            <h3>Кандидат 8 — Integration Developer</h3>
-            <p>6 лет. Go, Python, PostgreSQL, Kafka, RabbitMQ, 1С:УТ. Строил интеграционный слой между 1С, маркетплейсами и внутренней ERP. 1С: HTTP-сервисы, документы, справочники, регистры, обмен остатками. Риск: последние проекты больше про интеграции, чем продуктовую разработку.</p>
-          </article>
-          <article class="note-card">
-            <h3>Кандидат 9 — Junior Go Developer</h3>
-            <p>1 год. Go, PostgreSQL, REST. Поддержка внутреннего сервиса отчетности, небольшие API. 1С: работала пользователем 1С, интеграций не делала. Риск: недостаточно опыта для Middle.</p>
-          </article>
-          <article class="note-card">
-            <h3>Кандидат 10 — Backend Developer</h3>
-            <p>8 лет. Java, Spring, PostgreSQL, Kafka, Docker. Финтех-сервисы, платежи, высоконагруженные очереди. 1С: нет. Go: pet-проекты, коммерческого опыта нет. Риск: сильный backend, но нет ключевого Go + 1С.</p>
-          </article>
-          <article class="note-card">
-            <h3>Кандидат 11 — Go Backend Developer</h3>
-            <p>4 года. Go, PostgreSQL, Redis, REST, RabbitMQ, Grafana. Сервисы учета заказов и возвратов, мониторинг ошибок обмена. Интеграция с 1С:КА через REST, обработка дублей и рассинхронизации статусов. Риск: нет Kubernetes.</p>
-          </article>
-          <article class="note-card">
-            <h3>Кандидат 12 — 1C / Backend Developer</h3>
-            <p>5 лет. 1С:ERP, 1С:УТ, Go, PostgreSQL, REST. Писал расширения 1С и внешний сервис на Go для синхронизации остатков. Глубокое понимание документов, регистров, обменов. Риск: Go использовал только в одном проекте около года.</p>
-          </article>
-          <article class="note-card">
-            <h3>Кандидат 13 — QA Engineer</h3>
-            <p>4 года. Postman, SQL, Kafka UI, Allure, 1С. Тестировала интеграции между сайтом, 1С и CRM. Go: нет. Риск: не разработчик, но понимает предметную область.</p>
-          </article>
-          <article class="note-card">
-            <h3>Кандидат 14 — Go Developer</h3>
-            <p>5 лет. Go, PostgreSQL, gRPC, Kubernetes, Kafka, ELK. Highload-сервисы, логирование, мониторинг, incident response. 1С: не работал, но интегрировался с SAP и WMS. Риск: нет 1С, нужно проверять готовность разбираться.</p>
-          </article>
-          <article class="note-card">
-            <h3>Кандидат 15 — Backend / Integration Engineer</h3>
-            <p>7 лет. Go, Node.js, PostgreSQL, Kafka, RabbitMQ, Docker. Миграция интеграций из монолита во внешние сервисы, обмен заказами, остатками и возвратами. 1С:ERP и 1С:УТ, HTTP-сервисы, XML/JSON-обмены, разбор ошибок синхронизации. Риск: высокая зарплатная вилка, может быть overqualified.</p>
+          <article class="stack-card">
+            <h3>Почему резюме вынесены в файл</h3>
+            <p>Так кандидату сложнее решить задачу вручную: нужно структурировать вводные, сравнить профили и проверить вывод AI.</p>
           </article>
         </div>
       </section>
