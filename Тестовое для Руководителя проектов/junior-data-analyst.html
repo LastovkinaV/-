@@ -20,6 +20,7 @@
           <a href="#task">Задача</a>
           <a href="#materials">Материалы</a>
           <a href="#deliverables">На выходе</a>
+          <a href="#evaluation">Оценка</a>
         </nav>
       </header>
 
@@ -94,10 +95,59 @@
           <p class="eyebrow">На выходе</p>
           <h2>Что предоставить</h2>
         </div>
-        <div class="stack-grid">
-          <article class="stack-card"><h3>Анализ и SQL</h3><p>Краткое описание структуры данных, исходных вопросов и SQL-запросы, использованные для проверки.</p></article>
-          <article class="stack-card"><h3>Расхождения и решение</h3><p>Список расхождений с конкретными суммами и записями, классификация причин, рекомендации и одна техническая задача.</p></article>
-          <article class="stack-card"><h3>Использование AI</h3><p>Отдельный блок: где применяли AI, что проверили самостоятельно и какое предложение AI исправили или отклонили.</p></article>
+        <ol class="deliverable-list">
+          <li>Краткое описание структуры данных и исходных вопросов.</li>
+          <li>SQL-запросы, использованные при проверке.</li>
+          <li>Список найденных расхождений с конкретными суммами и записями.</li>
+          <li>Классификацию причин и уровень уверенности в выводах.</li>
+          <li>Рекомендации по исправлению и проверке результата.</li>
+          <li>Одну оформленную техническую задачу.</li>
+          <li>Короткое описание использования AI.</li>
+        </ol>
+      </section>
+
+      <section id="evaluation" class="section-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Критерии оценки</p>
+          <h2>Как оцениваем</h2>
+        </div>
+        <div class="evaluation-table-wrap">
+          <table class="evaluation-table">
+            <thead>
+              <tr>
+                <th scope="col">Блок</th>
+                <th scope="col">Баллы</th>
+                <th scope="col">Что оцениваем</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Анализ и локализация</td>
+                <td class="evaluation-points">30</td>
+                <td>Найдены основные расхождения и показаны конкретные строки или расчёты.</td>
+              </tr>
+              <tr>
+                <td>SQL</td>
+                <td class="evaluation-points">25</td>
+                <td>Запросы корректны, понятны и действительно проверяют гипотезы.</td>
+              </tr>
+              <tr>
+                <td>Логика выводов</td>
+                <td class="evaluation-points">20</td>
+                <td>Факты отделены от предположений; нет выдуманных причин.</td>
+              </tr>
+              <tr>
+                <td>Решение и постановка задачи</td>
+                <td class="evaluation-points">15</td>
+                <td>Предложение реализуемо, а критерий проверки измерим.</td>
+              </tr>
+              <tr>
+                <td>AI и оформление</td>
+                <td class="evaluation-points">10</td>
+                <td>Понятно, как использовался AI и как проверялся результат.</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
     </main>
