@@ -17,6 +17,7 @@
 - `accountant-junior.html` — тестовое для бухгалтера-джуна
 - `support-specialist.html` — тестовое для специалиста технической поддержки
 - `cmo-digital-packaging.html` — тестовое для CMO / Deputy CMO
+- `junior-data-analyst.html` — тестовое для Junior Data Analyst
 - `input/accountant-contract.txt` — договор для бухгалтерского тестового
 - `input/accountant-work-items.txt` — состав работ по договору
 
@@ -58,6 +59,7 @@ git push origin main
 - Accountant: `https://lastovkinav.github.io/-/accountant-junior.html`
 - Support specialist: `https://lastovkinav.github.io/-/support-specialist.html`
 - CMO / Deputy CMO: `https://lastovkinav.github.io/-/cmo-digital-packaging.html`
+- Junior Data Analyst: `https://lastovkinav.github.io/-/junior-data-analyst.html`
 
 ## Локальная проверка перед публикацией
 

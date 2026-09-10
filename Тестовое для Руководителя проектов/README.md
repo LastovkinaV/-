@@ -12,6 +12,7 @@
 - `accountant-junior.html` — тестовое для бухгалтера-джуна
 - `support-specialist.html` — тестовое для специалиста технической поддержки
 - `cmo-digital-packaging.html` — тестовое для CMO / Deputy CMO
+- `junior-data-analyst.html` — тестовое для Junior Data Analyst
 - `styles.css` — общие стили
 - `app.js` — контент страницы PM
 - `ai-developer-intern.js` — контент страницы AI intern
@@ -27,6 +28,7 @@
 - `input/accountant-context.txt` — контекст закрытия месяца для бухгалтера
 - `input/support-specialist-brief.txt` — краткий бриф для специалиста технической поддержки
 - `input/cmo-digital-packaging-brief.txt` — краткий бриф для CMO / Deputy CMO
+- `input/junior-data-analyst/` — DOCX, CSV и SQL-материалы для Junior Data Analyst
 
 ## Локальный просмотр
 

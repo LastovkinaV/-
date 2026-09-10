@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <title>Тестовое — Junior Data Analyst</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="background-orb orb-left"></div>
+    <div class="background-orb orb-right"></div>
+
+    <main class="page">
+      <header class="topbar">
+        <a class="brand" href="./index.html"><span class="brand-text">Test Library</span></a>
+        <nav class="topnav">
+          <a href="./index.html">Все тестовые</a>
+          <a href="#task">Задача</a>
+          <a href="#materials">Материалы</a>
+          <a href="#deliverables">На выходе</a>
+        </nav>
+      </header>
+
+      <section class="hero accountant-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Junior Data Analyst / AI Task</p>
+          <h1 class="hero-title-balance hero-title-accountant">
+            За 2 часа разберитесь,<br />
+            почему данные в отчёте<br />
+            не сходятся.
+          </h1>
+          <p class="lead">
+            Во внутреннем аналитическом сервисе исходные затраты загружаются в DWH,
+            после чего SQL-модель формирует итоговый отчёт. Вам нужно найти причины
+            расхождений, подтвердить выводы данными и предложить решение.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#materials">Скачать материалы</a>
+            <a class="button button-secondary" href="#deliverables">Что сдать</a>
+          </div>
+          <div class="hero-metrics">
+            <article class="metric-card"><p class="metric-label">Таймбокс</p><p class="metric-value">2ч</p><p class="metric-copy">На анализ, SQL и выводы</p></article>
+            <article class="metric-card"><p class="metric-label">Инструмент</p><p class="metric-value">SQL</p><p class="metric-copy">PostgreSQL или совместимый синтаксис</p></article>
+            <article class="metric-card"><p class="metric-label">Файлы</p><p class="metric-value">4</p><p class="metric-copy">Три CSV и готовый SQL-скрипт</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="task" class="section-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Главная задача</p>
+          <h2>Не просто увидеть разницу, а объяснить её</h2>
+          <p>
+            Покажите, за счёт каких данных или правил возникает расхождение,
+            что можно утверждать точно и какой информации не хватает для вывода.
+          </p>
+        </div>
+        <div class="flow-grid">
+          <article class="flow-card"><span class="flow-step">1</span><h3 class="flow-title">Разобраться в данных</h3><p class="flow-copy">Коротко опишите сущности, связи, важные поля и риски до расчётов.</p></article>
+          <article class="flow-card"><span class="flow-step">2</span><h3 class="flow-title">Проверить SQL</h3><p class="flow-copy">Найдите дубли, записи без сотрудника, ожидаемые суммы и строки расхождений.</p></article>
+          <article class="flow-card"><span class="flow-step">3</span><h3 class="flow-title">Сформулировать выводы</h3><p class="flow-copy">Отделите ошибку данных или SQL-логики от допустимого бизнес-правила и недостатка информации.</p></article>
+          <article class="flow-card"><span class="flow-step">4</span><h3 class="flow-title">Предложить решение</h3><p class="flow-copy">Опишите исправление, проверку результата и одну подтверждённую задачу для разработчика.</p></article>
+        </div>
+      </section>
+
+      <section id="materials" class="section-shell demo-shell">
+        <div class="section-copy">
+          <p class="eyebrow">Материалы для кандидата</p>
+          <h2>Скачайте задание и исходные данные</h2>
+          <p>
+            Все материалы можно скачать и загрузить в удобный для вас рабочий инструмент.
+            В архив для кандидата не входит ключ проверяющего.
+          </p>
+        </div>
+        <div class="dataset-card">
+          <div class="dataset-copy">
+            <h3>Задание и данные</h3>
+            <p>Документ содержит полное описание задачи и критерии оценки. CSV-файлы и SQL-скрипт нужны для проверки гипотез.</p>
+          </div>
+          <div class="dataset-links">
+            <a class="dataset-link" href="./input/junior-data-analyst/Тестовое задание - Junior Data Analyst.docx" download="Тестовое задание - Junior Data Analyst.docx">Скачать задание DOCX</a>
+            <a class="dataset-link" href="./input/junior-data-analyst/employees.csv" download="employees.csv">Скачать employees.csv</a>
+            <a class="dataset-link" href="./input/junior-data-analyst/costs.csv" download="costs.csv">Скачать costs.csv</a>
+            <a class="dataset-link" href="./input/junior-data-analyst/report.csv" download="report.csv">Скачать report.csv</a>
+            <a class="dataset-link" href="./input/junior-data-analyst/setup.sql" download="setup.sql">Скачать setup.sql</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="deliverables" class="section-shell">
+        <div class="section-copy">
+          <p class="eyebrow">На выходе</p>
+          <h2>Что предоставить</h2>
+        </div>
+        <div class="stack-grid">
+          <article class="stack-card"><h3>Анализ и SQL</h3><p>Краткое описание структуры данных, исходных вопросов и SQL-запросы, использованные для проверки.</p></article>
+          <article class="stack-card"><h3>Расхождения и решение</h3><p>Список расхождений с конкретными суммами и записями, классификация причин, рекомендации и одна техническая задача.</p></article>
+          <article class="stack-card"><h3>Использование AI</h3><p>Отдельный блок: где применяли AI, что проверили самостоятельно и какое предложение AI исправили или отклонили.</p></article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
